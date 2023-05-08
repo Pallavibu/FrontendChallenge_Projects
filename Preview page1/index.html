@@ -1,171 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Document</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
     <title>Frontend Mentor | FAQ Accordion Card</title>
-  
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>   
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    </style>
-  
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="accordion-body">
-        <div class="imageAcc">
-          <img src="./images/illustration-woman-online-desktop.svg" class="girl"> 
-          <img src="./images/bg-pattern-mobile.svg" class="diamond" height="100" width="100"> 
-          <!-- <img src="./images/bg-pattern-desktop.svg" class="square"> -->
+      <div class="imageAcc">
+        <img
+          src="./images/illustration-woman-online-desktop.svg"
+          class="girl"
+        />
+      </div>
+
+      <div class="accordion">
+        <h1>FAQs</h1>
+
+        <div class="container">
+          <div class="label">How many team members can I invite?</div>
+          <div class="content">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </div>
         </div>
-        <div class="accordion">
-            <h1>FAQs</h1>
 
-            <hr>
-            <div class="container">
-                <div class="label1">How many team members can I invite?</div>
-                <div class="content">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</div>    
-            </div>
+        <hr />
 
-            <hr>
-            <div class="container">
-                <div class="label1">What is the maximum file upload size?</div>
-                <div class="content">No more than 2GB. All files in your account must fit your alloted storage space.</div>
-            </div>
-
-            <hr>
-            <div class="container">
-                <div class="label1">How do I reset my password?</div>
-                <div class="content">Click "Forgot password" from the login page or "Change password" from your profile page. A reset link will be emailed to you.</div>
-            </div>
-
-            <hr>
-            <div class="container">
-                <div class="label1">Can I cancel my subscription?</div>
-                <div class="content">Yes! Send us a message and we’ll process your request no questions asked.</div>
-            </div>
-
-            <hr>
-            <div class="container">
-                <div class="label1">Do you provide additional support?</div>
-                <div class="content">hat and email support is available 24/7. Phone lines are open during normal business hours.s</div>
-            </div>
-         
-        
-
+        <div class="container">
+          <div class="label">What is the maximum file upload size?</div>
+          <div class="content">
+            No more than 2GB. All files in your account must fit your alloted
+            storage space.
+          </div>
         </div>
-        
+
+        <hr />
+
+        <div class="container">
+          <div class="label">How do I reset my password?</div>
+          <div class="content">
+            Click "Forgot password" from the login page or "Change password"
+            from your profile page. A reset link will be emailed to you.
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="container">
+          <div class="label">Can I cancel my subscription?</div>
+          <div class="content">
+            Yes! Send us a message and we'll process your request no questions
+            asked.
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="container">
+          <div class="label">Do you provide additional support?</div>
+          <div class="content">
+            That and email support is available 24/7. Phone lines are open
+            during normal business hours.s
+          </div>
+        </div>
+
+        <hr />
+      </div>
     </div>
+
     <script src="./script.js"></script>
-</body>
-</html>
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>   
-  .attribution { font-size: 11px; text-align: center; }
-  .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div>
-    <div class="mainContainer">
-      <button class="container">
-        <div class="rightSec">  
-          <div>
-            <img src="./images/illustration-woman-online-desktop.svg" class="girl"> 
-          </div>
-          <div class="info">
-            <div>
-              <div>
-                How many team members can I invite?
-              </div>
-              <button onclick="showAnswer1('answer5')">
-              <img src="./images/icon-arrow-down.svg" alt="Show answer" class="showAnswerButton1">
-            </button>
-                <p id="answer5" style="display: none;">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan..</p>
-                
-            </div> 
-
-            <div>
-              <div>
-                What is the maximum file upload size?
-              </div>
-
-              <button onclick="showAnswer1('answer1')">
-               <img src="./images/icon-arrow-down.svg" alt="Show answer" class="showAnswerButton">
-              </button>
-             
-                <p id="answer1" class="answer" style="display: none;">No more than 2GB. All files in your account must fit your alloted storage space.</p>
-            </div>
-            <div>
-              <div>How do I reset my password?</div>
-              <button onclick="showAnswer1('answer2')">
-              <img src="./images/icon-arrow-down.svg" alt="Show answer" class="showAnswerButton">
-            </button>
-
-                <p id="answer2" style="display: none;">Click "Forgot password" from the login page or "Change password" from your profile page. A reset link will be emailed to you.</p>
-             
-            </div>
-            <div>
-              <div>Can I cancel my subscription?</div>
-              <button onclick="showAnswer1('answer3')">
-              <img src="./images/icon-arrow-down.svg" alt="Show answer" class="showAnswerButton">
-            </button>
-
-                <p id="answer3" style="display: none;">Yes! Send us a message and we’ll process your request no questions asked.</p>
-              
-            </div>
-          
-            <div>
-              <div>Do you provide additional support?</div>
-              <button onclick="showAnswer1('answer4')">
-              <img src="./images/icon-arrow-down.svg" alt="Show answer" class="showAnswerButton">
-            </button>
-
-                <p id="answer4" style="display: none;">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-              
-            </div>
-          </div>
-        </div>
-      </button>
-    </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/Pallavibu">Pallavi B</a>.
-  </div>
-
-  <div>
-    <img src="./images/bg-pattern-desktop.svg" class="square">
-    <img src="./images/bg-pattern-mobile.svg" class="diamond" height="100" width="100"> 
-    <img src="./images/favicon-32x32.png" class="smiley"> 
-    <img src="./images/icon-arrow-down.svg" class="dropdown">  
-    <img src="./images/illustration-box-desktop.svg" class="attherate">  
-  </div> 
-
-  <script src="./script.js"></script>
-     
- 
-</body>
+  </body>
 </html>
